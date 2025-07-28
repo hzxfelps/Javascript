@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <!-- 
+c) Elaborar um programa para uma loja, o qual leia o preço de um produto e
+informe as opções de pagamento da loja. Calcule e informe o valor para
+pagamento à vista com 10% de desconto e o valor em 3x.
+Exemplo:
+Preço R$: 60.00
+À Vista R$: 54.00
+Ou 3x de R$: 20.00  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUSOUOZACIAN!!!!!!!!!!!!</title>
+</head>
+<body>
+    <script>
+        let value = Number(prompt("Insira o valor do produto: "));
+        let text4 = "Nossas opções de pagamento são: Pagamento á vista (10% de desconto) e o valor parcelado em 3x.";
+        alert(text4);
+        let text = "Preço: R$";
+        let text2 = "À vista: R$";
+        let text3 = "Parcelado (3x): R$";
+        let avista = value * 0.9;
+        let parcelado = value / 3;
+        alert(text + value + "\n" + text2 + avista + "\n" + text3 + parcelado);
+        console.log(text+value+"\n"+text2+avista+"\n"+text3+parcelado);
+    </script> 
+</body>
+</html>
