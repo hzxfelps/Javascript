@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <!--7 - Desenvolva um programa que leia uma temperatura e informe se está frio, agradável ou quente
+    Em geral, temperaturas abaixo de 10°C são consideradas frias, e temperaturas acima de 25°C são consideradas quentes. 
+    Temperaturas entre 15°C e 25°C são geralmente consideradas agradáveis. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockandroll</title>
+</head>
+<body>
+    <script>
+        let temp = Number(prompt("Insira a temperatura atual (graus Celsius): "));
+        if ( temp >= 15 && temp < 25) {
+            alert("A temperatura está agradável!");
+            console.log("A temperatura está agradável!");
+        } else if ( temp >= 25){
+            alert("A temperatura está quente!");
+            console.log("A temperatura está quente!");
+        } else if ( temp < 15){
+            alert("A temperatura está fria!");
+            console.log("A temperatura está fria!");
+        }
+    </script> 
+</body>
+</html>

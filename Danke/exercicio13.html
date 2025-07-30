@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <!--13 - Desenvolva um programa que leia um ano e verifique se ele é bissexto.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockandroll</title>
+</head>
+<body>
+    <script>
+        let year = Number(prompt("Insira o ano: "));
+        if ( year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            alert("O ano é bissexto!");
+            console.log("O ano é bissexto!");
+        } else {
+            alert("O ano não é bissexto.");
+            console.log("O ano não é bissexto.");
+        }
+        </script>
+</body>
+</html>
