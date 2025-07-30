@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <!--14 - Crie um programa que permita o acesso somente se a pessoa for maior de idade e tiver um documento.
+    day.toLowerCase() === "sábado"-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockandroll</title>
+</head>
+<body>
+    <script>
+        let name = prompt("Insira seu nome: ");
+        let yo = Number(prompt("Insira sua idade: "));
+        let jaodernein = prompt("Você tem documento "+name+"?");
+        if ( yo >= 18 && jaodernein.toLowerCase() === "sim" ) {
+            alert("Você pode acessar o programa!");
+            console.log("Você pode acessar o programa!");
+        } else if ( yo >= 18 && jaodernein.toLowerCase() === "nao" || yo >= 18 && jaodernein.toLowerCase() === "não" ){
+            alert("Sem documento não é permitido o acesso ao programa.");
+            console.log("Sem documento não é permitido o acesso ao programa.");
+        } else if ( yo < 18 && jaodernein.toLowerCase() === "sim"){
+            alert("Menores de idade não podem acessar o programa.");
+            console.log("Menores de idade não podem acessar o programa.");
+        } else if ( yo < 18 && jaodernein.toLowerCase() === "nao" || yo < 18 && jaodernein.toLowerCase() === "não" ) {
+             alert("Menores de idade e pessoas sem documento não podem acessar o programa.");
+            console.log("Menores de idade e pessoas sem documento não podem acessar o programa.");
+        }
+        </script>
+</body>
+</html>
