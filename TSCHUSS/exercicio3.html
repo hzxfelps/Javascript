@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <!-- 
+
+3 - Faça um programa em javascript para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento, desconte 8% de impostos. 
+Exiba o salário inicial, o salário com o aumento e o salário final.  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockandroll</title>
+</head>
+<body>
+    <script>
+        let s1 = Number(prompt("Insira o salário do funcionário: "));
+        let s1att = (s1 * 1.15);
+        let s1attwithtax = s1att - (s1att * 0.08);
+        alert("Salário inicial: R$"+s1+"\nSalário com aumento: R$"+s1att+"\nSalário final (Com desconto de 8% pós-aumento): R$"+s1attwithtax);
+        console.log("Salário inicial: R$"+s1+"\nSalário com aumento: R$"+s1att+"\nSalário final (Com desconto de 8% pós-aumento): R$"+s1attwithtax);
+    </script> 
+</body>
+</html>
